@@ -1,4 +1,4 @@
-# nayanthespaceguy.github.io
+# nayanpatil.space
 My personal website.
 
 ## MakeFile
