@@ -3,11 +3,12 @@ module github.com/NayanTheSpaceGuy/nayanpatil.space/v1
 go 1.22.5
 
 require (
-	github.com/joho/godotenv v1.5.1
+	github.com/a-h/templ v0.2.747
 	github.com/labstack/echo/v4 v4.11.3
 )
 
 require (
+	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/labstack/gommon v0.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
