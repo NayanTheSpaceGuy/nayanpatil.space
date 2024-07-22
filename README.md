@@ -1,59 +1,106 @@
-<div align="center">
-
 # nayanpatil.space
+
 NayanTheSpaceGuy's personal website.
 
-</div>
-<div align="center">
+[![License](https://img.shields.io/github/license/NayanTheSpaceGuy/nayanpatil.space)](https://mozilla.org/MPL/2.0/)
 
-[![License](https://img.shields.io/badge/license-MPLv2.0-blue.svg)](https://mozilla.org/MPL/2.0/)
+### Tech Stack
 
-</div>
-<div>
+[![Go](https://img.shields.io/badge/Go-v1.22.5-blue.svg?logo=go&logoColor=white&labelColor=grey)](https://github.com/golang/go)
+[![Echo](https://img.shields.io/badge/Echo-v4.11.3-blue.svg?logo=echo&logoColor=white&labelColor=grey)](https://github.com/labstack/echo)
+[![Templ](https://img.shields.io/badge/Templ-v0.2-blue.svg?logo=templ&logoColor=white&labelColor=grey)](https://github.com/a-h/templ)
+[![Htmx](https://img.shields.io/badge/Htmx-v2.0.1-blue.svg?logo=htmx&logoColor=white&labelColor=grey)](https://github.com/bigskysoftware/htmx)
+[![Tailwind](https://img.shields.io/badge/Tailwind-v3.4-blue.svg?logo=tailwindcss&logoColor=white&labelColor=grey)](https://github.com/tailwindlabs/tailwindcss)
 
-For legal notices, see LEGAL.md
-For attributions and credits, see CREDITS.md
+and more...
 
-## MakeFile
+## Table of Contents
+- [Introduction](#nayanpatilspace)
+- [Tech Stack](#tech-stack)
+- [Important Documents](#important-documents)
+- [Building the source](#building-the-source)
+- [Running](#running)
+- [Miscellaneous](#miscellaneous)
+- [Connect & Support](#connect--support)
 
-run all make commands with clean tests
-```bash
-make all build
+## Important Documents
+
+Please refer to the following documents for additional information:
+- [LEGAL.md](LEGAL.md): Detailed licensing information and copyright notices for the project and its components.
+- [CREDITS.md](CREDITS.md): Comprehensive list of contributors, third-party resources, and acknowledgments for the project.
+
+Contributors and users are encouraged to review these documents thoroughly.
+
+## Building the source
+
+### Dependencies
+
+[Arch-based](https://archlinux.org/packages/extra/x86_64/go/) (Manjaro / EndeavourOS / ... ):
+
+```shell
+pacman -S go
 ```
 
-build the application
-```bash
+### Installation
+
+```shell
+git clone https://github.com/NayanTheSpaceGuy/nayanpatil.space.git
+cd nayanpatil.space
+```
+
+### Building
+
+```shell
 make build
 ```
 
-run the application
-```bash
+## Running
+
+```shell
 make run
 ```
-
-Create DB container
-```bash
-make docker-run
+This uses the default port 42069. To specify a custom port:
+```shell
+SERVER_PORT=<VALUE> make run
 ```
 
-Shutdown DB container
-```bash
-make docker-down
-```
-
-live reload the application
-```bash
+For live reloading during development:
+```shell
 make watch
 ```
+Or with a custom port:
+```shell
+SERVER_PORT=<VALUE> make watch
+```
 
-run the test suite
-```bash
+Options:
+- `SERVER_PORT` — Custom port number (default: 42069)
+
+## Miscellaneous
+
+### Other makefile usage instructions
+
+Run all make commands with clean tests
+```shell
+make all build
+```
+
+Run the test suite
+```shell
 make test
 ```
 
-clean up binary from the last build
-```bash
+Clean up binary from the last build
+```shell
 make clean
 ```
 
-</div>
+## Connect & Support
+
+[![GitHub](https://img.shields.io/badge/GitHub-NayanTheSpaceGuy-181717?style=for-the-badge&logo=github)](https://github.com/NayanTheSpaceGuy)
+
+### Star this repo if you find it useful! 🌟
+
+[![License](https://img.shields.io/github/license/NayanTheSpaceGuy/nayanpatil.space)](https://mozilla.org/MPL/2.0/)
+![Last Commit](https://img.shields.io/github/last-commit/NayanTheSpaceGuy/nayanpatil.space)
+![Repo Size](https://img.shields.io/github/repo-size/NayanTheSpaceGuy/nayanpatil.space)
