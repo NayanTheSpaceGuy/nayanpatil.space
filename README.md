@@ -6,7 +6,7 @@ NayanTheSpaceGuy's personal website.
 </div>
 <div align="center">
 
-[![License](https://img.shields.io/badge/license-MPLv2.0%2B-blue.svg)](https://mozilla.org/MPL/2.0/)
+[![License](https://img.shields.io/badge/license-MPLv2.0-blue.svg)](https://mozilla.org/MPL/2.0/)
 
 </div>
 <div>
