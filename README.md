@@ -1,5 +1,18 @@
+<div align="center">
+
 # nayanpatil.space
-My personal website.
+NayanTheSpaceGuy's personal website.
+
+</div>
+<div align="center">
+
+[![License](https://img.shields.io/badge/license-MPLv2.0%2B-blue.svg)](https://mozilla.org/MPL/2.0/)
+
+</div>
+<div>
+
+For legal notices, see LEGAL.md
+For attributions and credits, see CREDITS.md
 
 ## MakeFile
 
@@ -42,3 +55,5 @@ clean up binary from the last build
 ```bash
 make clean
 ```
+
+</div>
