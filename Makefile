@@ -7,11 +7,11 @@ build:
 	@echo "Building..."
 	@templ generate
 	@tailwindcss -i cmd/web/assets/css/input.css -o cmd/web/assets/css/output.css
-	@go build -o ./tmp/main cmd/api/main.go
+	@go build -o ./tmp/main cmd/web/main.go
 
 # Run the application
 run:
-	@go run cmd/api/main.go
+	@go run cmd/web/main.go
 
 # Test the application
 test:
