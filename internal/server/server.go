@@ -1,31 +1,15 @@
 package server
 
 import (
-    "fmt"
-	"log"
-    "os"
-
-    "github.com/joho/godotenv"
-    "github.com/labstack/echo/v4"
+    "github.com/NayanTheSpaceGuy/nayanpatil.space/v1/internal/server/env"
+    "github.com/NayanTheSpaceGuy/nayanpatil.space/v1/internal/server/routes"
 )
 
-func Run() error {
+func Init() error {
+    err := env.Init()
+    if err != nil {
+        return err
+    }
 
-    err := godotenv.Load()
-	if err != nil {
-		log.Println("Error loading .env file")
-	}
-
-	e := echo.New()
-
-    SetupRoutes(e)
-
-    port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080" // Default port if not specified
-	}
-
-    fmt.Printf("Starting server on port %s\n", port)
-    return e.Start(":" + port)
-
+    return routes.Init()
 }
